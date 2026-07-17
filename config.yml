@@ -13,6 +13,11 @@ challenge:
   max_time: 1200
   min_time: 60
   inc: 10
+  time_controls:
+    - bullet
+    - blitz
+    - rapid
+    - classical
   variants:
     - standard
   modes:
