@@ -1,3 +1,1 @@
-# engines
-
-Placeholder README for engines directory.
+Put your engines and opening books here.
