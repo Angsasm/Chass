@@ -6,11 +6,10 @@ engine:
   dir: "./"
   name: "stoc"
   protocol: "uci"
-  ponder: false       # Disable thinking on opponent's time to save RAM
+  ponder: false
   uci_options:
-    Hash: 16          # Keeps the transposition table tiny (16MB)
-    Threads: 1        # Forces only a single CPU core
-    Use NNUE: false   # Disables the heavy neural network to free up ~100-300MB RAM
+    Hash: 16
+    Threads: 1
 
 challenge:
   accept_bot: true
