@@ -6,13 +6,13 @@ engine:
   dir: "./"
   name: "stoc"
   protocol: "uci"
-  # This MUST be named uci_options so lichess-bot passes it to Stockfish
+  ponder: false       # Disable thinking on opponent's time to save RAM
   uci_options:
-    Hash: 16          # Limit memory cache to 16MB
-    Threads: 1        # Use only 1 CPU thread
+    Hash: 16          # Keeps the transposition table tiny (16MB)
+    Threads: 1        # Forces only a single CPU core
+    Use NNUE: false   # Disables the heavy neural network to free up ~100-300MB RAM
 
 challenge:
-  # Permite botului să accepte provocări automat
   accept_bot: true
   max_time: 1200
   min_time: 60
