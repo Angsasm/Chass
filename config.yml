@@ -3,8 +3,8 @@ token: "$LICHESS_BOT_TOKEN"
 url: "https://lichess.org"
 
 engine:
-  dir: ""
-  name: "stockfish"
+  dir: "./"
+  name: "stoc"
   protocol: "uci"
 
 challenge:
