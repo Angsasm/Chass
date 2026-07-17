@@ -6,6 +6,10 @@ engine:
   dir: "./"
   name: "stoc"
   protocol: "uci"
+  # Limit Stockfish's resource consumption to fit in Render's 512MB RAM limit
+  options:
+    Hash: 16          # Limit memory cache to 16MB (default is often 16MB-512MB+)
+    Threads: 1        # Use only 1 CPU thread (Render's free tier only has 1 CPU anyway)
 
 challenge:
   # Permite botului să accepte provocări automat
