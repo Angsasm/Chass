@@ -1,2 +1,2 @@
 # Chass
-Chess bot for render
+Chess bot using render for lichess
